@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Embedding Media</title>
+        <meta charset="UTF-8">
+        <meta name = "author" content="Sanjay N">
+        <meta http-equiv="Content Security-Policy" content="default-src 'self'">
+    </head>
+    <body>
+        <h1> Image Embedding</h1>
+        <div class="img">
+            <h2> normal Image Embedding</h2>
+            <img src="EmbeddingMedia/img.jpg" alt="Sanjay N">
+            <hr>
+            <h2> Image Embedding with height and width</h2>
+            <img src="EmbeddingMedia/img.jpg" alt="Sanjay N" height="150" width="150">
+            <hr>
+            <h2> Fetchby priority</h2>
+            <img src="EmbeddingMedia/img.jpg" alt="Sanjay N" height="150" width="150" fetchpriority="high">
+            <hr>
+            <h2>Figure tags</h2>
+            <figure>
+                <img src="EmbeddingMedia/img.jpg" alt="Sanjay N" height="150" width="150">
+                <figcaption>Sanjay N</figcaption>
+            </figure>
+            <hr>
+        </div>
+        <h1> Video Embedding</h1>
+        <div class="vid">
+            <h2>Normal Video Embedding</h2>
+            <video width="320" height="240">
+                <source src="EmbeddingMedia/vid.mp4" type="video/mp4">
+            </video>
+            <hr>
+            <h2>Video Embedding with controls</h2>
+            <video controls width="320" height="240">
+                <source src="EmbeddingMedia/vid.mp4" type="video/mp4">
+            </video>
+            <hr>
+            <h2>Video Embedding with poster</h2>
+            <video controls poster="EmbeddingMedia/img.jpg" width="320" height="240">
+                <source src="EmbeddingMedia/vid.mp4" type="video/mp4">
+            </video>
+            <hr>
+            <h2>Video Embedding with autoplay</h2>
+            <video controls autoplay width="320" height="240">
+                <source src="EmbeddingMedia/vid.mp4" type="video/mp4">
+            </video>
+            <hr>
+            <h2>Video Embedding with loop</h2>
+            <video controls autoplay loop width="320" height="240">
+                <source src="EmbeddingMedia/vid.mp4" type="video/mp4">  
+            </video>
+            <hr>
+            <h2>Video Embedding with muted</h2>
+            <video controls muted width="320" height="240">
+                <source src="EmbeddingMedia/vid.mp4" type="video/mp4">
+            </video>
+            <hr>
+        </div>
+        <h1>Audio Embedding</h1>
+        <div class="aud">
+            <h2>Normal Audio Embedding</h2>
+            <audio >
+                <source src="EmbeddingMedia/aud.mp3" type="audio/mpeg">
+            </audio>
+            <hr>
+            <h2>Audio Embedding with controls</h2>
+            <audio controls>
+                <source src="EmbeddingMedia/aud.mp3" type="audio/mpeg">
+            </audio>
+            <hr>
+            <p> which also have autoplay , loop, muted</p>
+            <hr>
+        </div>
+        <h1>IFrame Embedding</h1>
+        <div class="iframe">
+            <h2>Normal IFrame Embedding</h2>
+            <iframe src="https://www.sanjayn.me" width="560" height="315"></iframe>
+            <hr>
+            <h2> IFrame Embedding with title</h2>   
+            <iframe src="https://www.sanjayn.me" width="560" height="315" title="Sanjay N's Portfolio"></iframe>
+            <hr>
+        </div>
+
+    </body>
+</html>
