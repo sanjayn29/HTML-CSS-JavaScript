@@ -5,3 +5,4 @@ const num = 9080581688;
 console.log(name);
 console.log(age);
 console.log(num);
+console.log("Welcome, " + name);
