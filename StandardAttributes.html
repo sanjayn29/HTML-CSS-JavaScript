@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Standard Attributes</title>
+        <meta charset = "UTF-8">
+        <meta name = "author" content = "sanjay n">
+        <style>
+            #p1{
+                color:aqua;
+            }
+            .class1{
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <H1>Standard Attributes</H1>
+        <hr>
+        <h3>Attribute <i>ID</i></h3>
+        <p id="p1">This is a paragraph with an ID attribute.</p>
+        <hr>
+        <h3>Attribute <i>Class</i></h3>
+        <p class="class1">This is a paragraph with a class attribute.</p>
+        <p class="class1">This is another paragraph with the same class attribute.</p>
+        <hr>
+        <h3>Attribute <i>data</i></h3>
+        <button id = "btn1" data-name="Sanjay N" data-age="30">Click me</button>
+        <hr>
+        <h3>Attribute <i>Style</i></h3>
+        <p style =" color:blue; background-color: yellow;">This is a paragraph with a style attribute.</p>
+        <hr>
+
+        <script>
+            const button = document.getElementById('btn1');
+            button.addEventListener('click', function() {
+                const name = this.getAttribute('data-name');
+                const age = this.getAttribute('data-age');
+                alert(`Name: ${name}, Age: ${age}`);
+            });
+        </script>
+    </body>
+</html>
