@@ -15,6 +15,16 @@ console.log(map);
 map.clear();
 console.log(map);
 
+for(let [key,value] of map){
+    console.log(key + ": " + value);
+}
+
+for(let key of map.keys()){
+    console.log(key);
+}
+
+
+
 // Keyed Collections in JavaScript: WeakMap
 let weakmap = new WeakMap();
 let obj = {};
@@ -39,13 +49,21 @@ console.log(set);
 set.clear();
 console.log(set);
 
+for (let value of set) {
+  console.log(value);
+}
+
+set.forEach((i)=>{
+    console.log(i);
+});
+
 // Keyed Collections in JavaScript: WeakSet
 let weakset = new WeakSet();
 let obj1 = {};
 let obj2 = {};
 console.log(weakset);
-weakset.add(obj1,"This is a weak set");
-weakset.add(obj2,"This is a weak set");
+weakset.add(obj1);
+weakset.add(obj2);
 console.log(weakset.has(obj1));
 console.log(weakset.has(obj2));
 weakset.delete(obj1);
