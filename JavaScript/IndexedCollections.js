@@ -15,6 +15,9 @@ for(let i =0;i < arr.length ; i++){
     console.log(arr[i]);
 }
 
+arr.splice(1,1);
+console.log(arr);
+
 arr.forEach(function(i){
     console.log(i);
 });
