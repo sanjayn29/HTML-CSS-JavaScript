@@ -24,3 +24,25 @@ if (marks >= 90) {
 } else {
   console.log("C Grade");
 }
+
+//switch Statement
+
+let day = 2;
+
+switch(day) {
+  case 1:
+    console.log("Monday");
+    break;
+
+  case 2:
+    console.log("Tuesday");
+    break;
+
+  default:
+    console.log("Invalid");
+}
+
+//Ternary Operator
+let rollno = 87;
+let result = (rollno < 231) ? "Pass" : "Fail";
+console.log(result);
